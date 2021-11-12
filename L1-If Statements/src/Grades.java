@@ -15,18 +15,29 @@ public class Grades {
 
         if(percentage >= 60){
             grade = "D";
+            if(percentage < 70){
+                System.out.println("Your Grade is D");
+            }
+
         }
 
         if(percentage >= 70){
             grade = "C";
+            if(percentage < 80){
+                System.out.println("Your Grade is C");
+            }
         }
 
         if(percentage >= 80){
             grade = "B";
+            if(percentage < 90){
+                System.out.println("Your Grade is B");
+            }
         }
 
         if(percentage >= 90){
             grade = "A";
+
         }
 
         System.out.println("Your grade is " + grade);
